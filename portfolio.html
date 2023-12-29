@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+  <title> portfolio </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="sections.css">
+<link rel="stylesheet" type="text/css" href="images.css">
+<link rel="stylesheet" type="text/css" href="texts.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="body.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<script>
+  var isScrolling = false;
+
+  function scrollToSection(sectionId) {
+    if (isScrolling) return;
+
+    isScrolling = true;
+
+    var targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      var headerHeight = document.querySelector('.header').offsetHeight;
+
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+        inline: 'center'
+      });
+
+      setTimeout(function () {
+        
+        isScrolling = false;
+      }, 500); 
+    }
+  }
+</script>
+
+</head>
+<body class="background">
+  <div class="header">
+<div class="button-container">
+  <button onclick="scrollToSection('cover-content')"> Cover</button>
+  <button onclick="scrollToSection('about-me-content')"> About me</button>
+  <button onclick="scrollToSection('education-content')"> Education</button>
+  <button onclick="scrollToSection('experience-content')"> Experience </button>
+  <button onclick="scrollToSection('skills-content')"> Skills</button>
+  <button onclick="scrollToSection('contact-me-content')"> Contact </button>
+</div>
+  </div>
+  <div style="background-color:white;
+  height:10px;
+  width: 600px;
+  margin-top:500px; ">
+ </div>
+ 
+  <p id="cover-content" class="cover">
+    WELCOME TO MY PORTFOLIO
+  </p>
+  <div style="background-color:white;
+height:10px;
+width: 600px; 
+float: right;
+
+">
+ </div>
+  
+
+  <div class="about_div">
+    <img id="about-me-content" src="images/first.jpg" class="image">
+    <center>
+      <p class="about">ABOUT ME</p>
+      <p  class="text_one">
+        Hello! I'm Yatinder, a student at UIET MDU Rohtak studying ECE. I have a passion for coding and am eager to kickstart my career in web development. My experience so far includes working with C++, HTML, and CSS. Aside from coding, I have a keen interest in video editing. I've worked on several video editing projects and am passionate about improving my skills in this area. I'm confident in my work ethic and dedication to learning, and I believe these traits will enable me to quickly adapt to new challenges.
+      </p>
+    </center>
+  </div>
+
+  
+  
+  <div class="about_div">
+
+    
+  
+     <div >
+      <center>
+      <P class="education">
+        EDUCATION
+      </P>
+        <p id="education-content" class="text_two">  DAV CENTENARY PUBLIC SCHOOL (2016 - 2021) </p>
+        <p class="text_three">
+          High school ; 12th : 96.2% , 10th: 95.2%
+        </p>
+        <p class="text_two"> Maharshi Dayanand University, Rohtak (2022-present) </p>
+        <p class="text_three">
+          B.Tech in Electronics and Communication
+        </p>
+      </center>
+     </div>
+     <div >
+      <img src="images/second.jpg" class="second_image">
+     </div>
+    
+    </div>
+    
+    <div class="about_div">
+
+      <div >
+        <img src="images/third.jpg" class="third_image">
+       </div>
+    
+       <div >
+        <center>
+        <P class="about">
+          EXPERIENCE
+        </P>
+        
+      </P>
+      <p id= "experience-content" class="text_four">  UIET PLACEMENT CELL (2022-PRESENT) </p>
+      <p class="text_three">
+        > Social media management
+      </p>
+      <p class="text_two"> ENCREATORS (JUNE 2023)  </p>
+      <p class="text_three">
+        > Cleared the joining test for encreators
+      </p>
+        </center>
+       </div>
+       
+      
+      </div>  
+
+    
+        <center>
+          <div class="skills_div">
+
+            <div>
+              <p class="about">
+                SKILLS
+                <div class="flex-container">
+                  <ul class="column">
+                    <li id="skills-content" class="list">WEB AND MULTIMEDIA</li>
+                    <li>• HTML & CSS</li>
+                    <li>• Video Editing</li>
+                    <li>• Graphic design </li>
+                  </ul>
+                  <ul class="column">
+                    <li class="list">OTHER SKILLS</li>
+                    <li>• Event management</li>
+                    <li>• Team coordination</li>
+                    <li>• Adaptability and Flexibility</li>
+                  </ul>
+                </div>
+            </div>
+        </center>
+        <center>
+         <p id="contact-me-content" class="about" style="margin-top:700px; 
+         font-size: 30px;
+         margin-bottom: 5px;">
+          CONTACT ME 
+          </p>
+        </center>
+        <div class="footer">
+          <div class="logo">
+            <a href="mailto:chhoker.yatinder123@gmail.com" target="_blank" title="Email">
+            <img src="images/fourth.png" class="image_fourth"> </a>
+            <a href="https://github.com/Yatin12527" target="blank" >
+            <img src="images/fifth.png" class="image_fourth" title="Github"> </a>
+            <a href="https://www.linkedin.com/in/yatinder-kumar-955b3a272/" target="blank" title="Linkedin">
+           <img src="images/sixth.png" class="image_fourth"> </a>
+          </div>
+          <p class="end">
+            Created by <button style="
+            font-family: 'Montserrat', sans-serif;
+             color: black;
+             font-weight: bold;
+             margin-top: auto; 
+             padding-left:0px;
+             margin-left: 0px;
+             font-size: 16px;"
+             onclick="scrollToSection('about-me-content')">Yatinder </button>
+          </p>
+        
+        </div>
+</body>
