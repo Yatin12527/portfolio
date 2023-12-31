@@ -1,25 +1,25 @@
 .image{
-  border-radius:500px;
+  border-radius:50%;
   margin-right: 50px;
   margin-left: 50px;
-  width: 800px;
-  height: 500px;
-  margin-top: 10px;
+  width: 35%;
+  height: 5%;
   
   
 }
 .second_image,.third_image{
-  margin-right: 50px;
+
   margin-left: 50px;
- width: 700px;
+  width: 93%;
   height: 500px;
   margin-top: 80px;
   
   border-radius: 25px;
 }
 .third_image{
+  margin-right: 40px;
   margin-left: 0px;
-  width: 700px;
+  width: 90%;
   height: 450px;
   border-radius: 15px;
   margin-top: 0px;
